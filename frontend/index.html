@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>VentBot</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header" id="top">
+        <div class="site-header-inner">
+
+            <a class="brand" href="#top">
+                <span class="brand-mark">😮‍💨</span>
+                <span class="brand-name">VentBot</span>
+            </a>
+
+            <nav class="site-nav">
+                <a href="#about">About</a>
+                <a href="#app">Open app</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main class="page">
+
+        <div class="frame" id="app">
+
+            <div class="corner tl"></div>
+            <div class="corner tr"></div>
+            <div class="corner bl"></div>
+            <div class="corner br"></div>
+
+            <div class="container">
+
+                <div class="statusbar">
+                    <span class="statusbar-item">
+                        <span class="dot"></span>
+                        SYSTEM ONLINE
+                    </span>
+                    <span class="statusbar-item statusbar-id">VENTBOT // v1.0</span>
+                </div>
+
+                <div class="hero">
+                    <div class="logo">😮‍💨</div>
+                    <h1>VentBot</h1>
+                    <p class="tagline">
+                        The cubicle confessional &amp; jargon exorcist.
+                    </p>
+                </div>
+
+                <div class="panel">
+
+                    <label class="field-label" for="inputBox">INPUT</label>
+
+                    <textarea
+                        id="inputBox"
+                        placeholder="Paste the corporate nonsense that's ruining your day, or tell me how you're feeling..."
+                    ></textarea>
+
+                    <button id="submitBtn">
+                        EXORCISE IT
+                        <span class="btn-arrow">→</span>
+                    </button>
+
+                </div>
+
+                <div id="loadingState" class="hidden">
+                    <div class="scan-track"><div class="scan-bar"></div></div>
+                    <p id="loadingText"></p>
+                </div>
+
+                <div id="resultBox" class="hidden"></div>
+
+            </div>
+
+        </div>
+
+        <section class="about" id="about">
+            <div class="about-inner">
+
+                <span class="field-label">ABOUT THIS APP</span>
+
+                <h2>Two modes. One goal: make the workday lighter.</h2>
+
+                <p class="about-lead">
+                    VentBot reads whatever you paste in and figures out
+                    whether it's corporate jargon that needs decoding, or
+                    a rough day that needs a witness. No forms, no
+                    categories to pick — just say what's going on.
+                </p>
+
+                <div class="about-grid">
+
+                    <div class="about-item">
+                        <h3>🧠 Jargon mode</h3>
+                        <p>
+                            Drop in the email, the Slack message, the
+                            meeting recap — anything dense with
+                            "synergy" and "circling back." You get the
+                            real meaning, a five-year-old's version, and
+                            a pirate translation, side by side.
+                        </p>
+                    </div>
+
+                    <div class="about-item">
+                        <h3>😮‍💨 Vent mode</h3>
+                        <p>
+                            Tell it how the day actually went. VentBot
+                            responds with a bit of empathy and,
+                            sometimes, a small joke to take the edge off
+                            — no fixing, no advice, just a place to put
+                            it down.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="about-note">
+                    <span class="about-note-label">GOOD TO KNOW</span>
+                    <p>
+                        Sessions are anonymous and kept only in your
+                        browser. VentBot isn't a therapist — if a vent
+                        reads like it's more than a bad day, it will
+                        gently point you toward real support instead of
+                        trying to handle it alone.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="site-footer-inner">
+            <span>VentBot — built for cubicle survivors.</span>
+            <span class="site-footer-sub">
+                Not a substitute for professional support.
+            </span>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
